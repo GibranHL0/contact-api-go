@@ -1,5 +1,6 @@
 module github.com/GibranHL0/contact-api-go
 
+// +heroku goVersion go1.16
 go 1.16
 
 require (

@@ -1,4 +1,4 @@
-module contacts-api-go
+module github.com/GibranHL0/contact-api-go
 
 go 1.16
 

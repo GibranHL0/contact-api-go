@@ -296,8 +296,9 @@ func findEmail(email string, db *sql.DB) (bool, error) {
 
 func main() {
 	mux := http.NewServeMux()
+	port := os.Getenv("PORT")
 
 	mux.HandleFunc("/contacts", contactsHandler)
 
-	log.Fatal(http.ListenAndServe(":8000", mux))
+	log.Fatal(http.ListenAndServe(":"+port, mux))
 }
